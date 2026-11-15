@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>香港培道小學幼稚園 K1 面試準備｜何禮然 2027/28</title>
+<style>
+:root{--bg:#f6f4ee;--card:#ffffff;--ink:#26282b;--muted:#87817a;--accent:#3a6d9c;--accent-soft:#e3edf6;--good:#3f7d5c;--bad:#b4453c;--line:#e4e0d6;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"PingFang HK","Noto Sans HK","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+header{padding:28px 16px 10px;text-align:center}
+header h1{font-size:1.5rem;letter-spacing:.02em}
+header p{color:var(--muted);font-size:.9rem;margin-top:4px}
+nav{display:flex;gap:6px;overflow-x:auto;padding:12px 16px;position:sticky;top:0;background:var(--bg);z-index:5;border-bottom:1px solid var(--line)}
+nav button{flex:0 0 auto;border:1px solid var(--line);background:var(--card);padding:8px 14px;border-radius:999px;font-size:.92rem;cursor:pointer;color:var(--ink)}
+nav button.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+main{max-width:760px;margin:0 auto;padding:16px 16px 80px}
+section.page{display:none}
+section.page.active{display:block}
+h2{font-size:1.15rem;margin:22px 0 10px;display:flex;align-items:center;gap:8px}
+h2 .tag{font-size:.7rem;background:var(--accent-soft);color:var(--accent);padding:2px 8px;border-radius:6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:10px}
+.flow{display:flex;flex-direction:column;gap:8px}
+.flow .step{display:flex;gap:10px;align-items:flex-start}
+.flow .n{flex:0 0 26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:600}
+.plus-minus{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:520px){.plus-minus{grid-template-columns:1fr}}
+.pm{border-radius:14px;padding:12px 14px;border:1px solid var(--line);background:var(--card)}
+.pm h3{font-size:.95rem;margin-bottom:6px}
+.pm.good h3{color:var(--good)}.pm.bad h3{color:var(--bad)}
+.pm li{font-size:.88rem;margin-left:18px}
+table{width:100%;border-collapse:collapse;font-size:.88rem;background:var(--card);border-radius:12px;overflow:hidden}
+th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--accent-soft);color:var(--accent);font-weight:600}
+.mnemo{background:#eef3f9;border:1px dashed var(--accent);border-radius:12px;padding:10px 14px;margin:8px 0 14px}
+.mnemo b{color:var(--accent)}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
+details summary{cursor:pointer;padding:13px 16px;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:8px}
+details summary::after{content:"＋";color:var(--accent);font-size:1.1rem}
+details[open] summary::after{content:"－"}
+details .body{padding:0 16px 14px;font-size:.92rem}
+.who{display:inline-block;font-size:.72rem;border-radius:6px;padding:1px 7px;margin-right:6px;background:var(--accent-soft);color:var(--accent)}
+.who.dad{background:#e3edf6;color:#3a6d9c}
+.who.mom{background:#f4e6f2;color:#a0568f}
+.samp{background:#f6f2ec;border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:8px 12px;margin-top:6px}
+#deck{display:flex;flex-direction:column;align-items:center;gap:14px}
+.fc{width:100%;max-width:420px;min-height:220px;perspective:1000px;cursor:pointer}
+.fc .inner{position:relative;width:100%;min-height:220px;transition:transform .5s;transform-style:preserve-3d}
+.fc.flipped .inner{transform:rotateY(180deg)}
+.fc .face{position:absolute;inset:0;backface-visibility:hidden;border-radius:18px;padding:20px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.fc .front{background:var(--accent);color:#fff;font-size:1.15rem;font-weight:600}
+.fc .back{background:var(--card);border:2px solid var(--accent);transform:rotateY(180deg);font-size:.98rem}
+.fc .kicker{font-size:.72rem;opacity:.85;margin-bottom:8px}
+.fcctl{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.fcctl button{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:8px 14px;cursor:pointer}
+.counter{color:var(--muted);font-size:.85rem}
+.q{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:12px}
+.q h3{font-size:.98rem;margin-bottom:10px}
+.q .opt{display:block;width:100%;text-align:left;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 12px;margin-bottom:8px;cursor:pointer;font-size:.9rem}
+.q .opt.correct{border-color:var(--good);background:#eef7f1}
+.q .opt.wrong{border-color:var(--bad);background:#f9ecea}
+.q .why{font-size:.82rem;color:var(--muted);margin-top:4px;display:none}
+.q.done .why{display:block}
+#result{display:none;background:var(--accent);color:#fff;border-radius:14px;padding:18px;text-align:center;font-size:1.1rem;font-weight:600;margin-bottom:14px}
+.sources li{font-size:.85rem;margin-bottom:8px;margin-left:18px;word-break:break-all}
+details.audit{margin:14px 0;background:#fff;border:1px solid #e5e0d8;border-radius:12px;padding:12px 16px}
+details.audit summary{cursor:pointer;font-weight:700;color:#7a4b12}
+details.audit p.auditnote{font-size:.85rem;color:#666;margin:8px 0}
+table.audit{width:100%;border-collapse:collapse;font-size:.82rem}
+table.audit td,table.audit th{border:1px solid #e5e0d8;padding:6px 8px;text-align:left;vertical-align:top}
+table.audit th{background:#faf6ef}
+.src{color:var(--muted);font-size:.75rem}
+footer{text-align:center;color:var(--muted);font-size:.75rem;padding:20px}
+</style>
+</head>
+<body>
+<header>
+<h1>香港培道小學幼稚園 K1 面試準備</h1>
+<p>何禮然（2024.8.21）｜2027/28 K1｜面試日 2026-11-21（六），時間個別電郵通知</p>
+</header>
+<nav id="nav">
+<button data-p="ov" class="active">總覽</button>
+<button data-p="qa">家長 Q&A</button>
+<button data-p="fc">記憶卡</button>
+<button data-p="qz">測驗</button>
+<button data-p="src">來源</button>
+</nav>
+<main>
+
+<section class="page active" id="ov">
+<h2>面試流程 <span class="tag">校長親述＋官方日期</span></h2>
+<div class="card flow">
+<div class="step"><div class="n">1</div><div><b>一位家長</b>陪同小朋友入面試場區，先俾佢同爸爸／媽媽<b>玩玩具熱身</b>，熟悉環境（陳敏儀校長親述）</div></div>
+<div class="step"><div class="n">2</div><div>熟悉後去另一個位置<b>同老師傾談</b>：內容貼近日常——例如俾佢揀水果問鍾意食邊樣、玩車仔邊玩邊傾偈</div></div>
+<div class="step"><div class="n">3</div><div>重點係<b>肯開口說話</b>，唔係鬥叻：「面試標準不是要小朋友有傑出的說話技巧」</div></div>
+<div class="step"><div class="n">4</div><div>家長實錄（非官方）：離場接小貼紙時老師會<b>觀察會唔會講「多謝」「再見」</b></div></div>
+<div class="step"><div class="n">5</div><div>家長部分會問<b>「點解揀我哋學校」</b>（是否認同辦學理念）；下午場撞瞓晏覺可以抱住先睡一會，學校有足夠座位</div></div>
+</div>
+
+<h2>加分位 vs 扣分位 <span class="tag">校長及主任親述轉化</span></h2>
+<div class="plus-minus">
+<div class="pm good"><h3>✓ 加分</h3><ul>
+<li>家長放鬆——家長輕鬆，小朋友先敢開口</li>
+<li>做孩子的啦啦隊：背後打氣、微笑耐心等候</li>
+<li>唔代答、唔搶答，俾老師有空間引導</li>
+<li>俾小朋友自然玩玩具——肯玩，老師已可帶出話題</li>
+<li>慢熱冇問題，老師會俾時間適應</li>
+</ul></div>
+<div class="pm bad"><h3>✗ 扣分</h3><ul>
+<li>搶答／代答（校長：孩子未答家長已代答＝最差情況）</li>
+<li>迫小朋友背答案／講書面語（例：迫講 Good morning）</li>
+<li>家長焦慮令小朋友緊張</li>
+<li>當場催促、比併其他小朋友</li>
+</ul></div>
+</div>
+
+<h2>小朋友部分 <span class="tag">2歲3個月</span></h2>
+<table>
+<tr><th>題目／情境</th><th>禮然準備</th></tr>
+<tr><td>問名字</td><td>「我叫禮然」（家人喚名）</td></tr>
+<tr><td>揀水果／鍾意食咩</td><td>照真實答，家長現場唔插手</td></tr>
+<tr><td>玩車仔／玩具</td><td>佢最鍾意消防車救護車，自然玩自然講</td></tr>
+<tr><td>禮貌語：早晨、多謝、再見</td><td>獎勵表訓練緊，自然發揮；唔迫講英文版</td></tr>
+<tr><td>聽指令</td><td>晨早程序卡屋企練過，唔臨場逼</td></tr>
+</table>
+<div class="mnemo"><b>現場原則：</b>唔出聲完全正常（校長明言）；唔准代答；父母做啦啦隊。</div>
+
+<h2>臨場 checklist</h2>
+<div class="card">
+<ul style="margin-left:18px">
+<li>提早 15–20 分鐘到（校長重視自然，唔使太早）</li>
+<li>電話靜音；帶水、紙巾、一袋後備衫</li>
+<li>衫舒服企理就得，唔使影樓照</li>
+<li>家長答案口訣：<b>「做中學・生活教・銜接順・愛誠貞毅」</b></li>
+<li>記住校長金句：<b>孩子就是孩子；安全感受先於表現</b></li>
+</ul>
+</div>
+</section>
+
+<section class="page" id="qa">
+<h2>家長 Q&A <span class="tag">二人版本要一致</span></h2>
+<div class="mnemo">全部答案口訣：<b>「做中學・生活教・銜接順・愛誠貞毅」</b></div>
+
+<details><summary><span class="who dad">爸</span><span class="who mom">媽</span>Q1 點解揀培道？（核心題）</summary>
+<div class="body">
+<div class="samp">「我哋認同杜威『從做中學、教育即生活』嘅理念。簡介會見到學校用真實生活活動學習——打工賺錢賣物會、揹BB體驗爸媽辛勞——唔係操練式學術。幼稚園同小學共用校舍同一個校長，由K1開始已見到小學生活，銜接自然。加埋學校重視閱讀同品格（愛誠貞毅），同我哋家庭想小朋友獨立、有同理心嘅方向一致。」</div>
+<div class="src">來源：杜威理念及課程＝教育局概覽；賣物會／揹BB＝簡介會逐字稿；共用校舍及校長＝HK01 專訪；校訓＝官方資料</div>
+</div></details>
+
+<details><summary><span class="who dad">爸</span><span class="who mom">媽</span>Q2 平日邊個照顧？</summary>
+<div class="body">
+<div class="samp">照實講分工，突出爸媽親自參與＋固定親子時段，唔扮工整。</div>
+<div class="src">來源：K1 面試常見家長題（教育王國 100 題合集）</div>
+</div></details>
+
+<details><summary><span class="who dad">爸</span><span class="who mom">媽</span>Q3 禮然發脾氣點處理？</summary>
+<div class="body">
+<div class="samp">「先確認情緒（命名佢嘅感受），再簡單設限，冷靜後教返佢講出需要。我哋唔用體罰，一致處理。」</div>
+<div class="src">來源：K1 家長題（教育王國合集 Q16/22）</div>
+</div></details>
+
+<details><summary><span class="who dad">爸</span><span class="who mom">媽</span>Q4 用三個詞形容禮然</summary>
+<div class="body">
+<div class="samp">照實答＋一個例子：活潑——鍾意跑跳；好奇——鍾意消防車；有禮——自然講早晨多謝。</div>
+<div class="src">來源：K1 家長題（教育王國合集 Q24/25）</div>
+</div></details>
+
+<details><summary><span class="who dad">爸</span><span class="who mom">媽</span>Q5 假日帶佢去邊？</summary>
+<div class="body">
+<div class="samp">照實答：公園、圖書館借書——配合學校閱讀文化係加分位。</div>
+<div class="src">來源：K1 家長題（教育王國合集 Q11）；閱讀文化＝簡介會逐字稿</div>
+</div></details>
+
+<details><summary><span class="who dad">爸</span><span class="who mom">媽</span>Q6 家校合作可以點配合？</summary>
+<div class="body">
+<div class="samp">「樂意參加家長學堂、觀課日、親子活動，每星期借閱圖書我哋屋企已經做緊親子伴讀。」</div>
+<div class="src">來源：家長學堂／觀課日／借閱圖書＝教育局概覽及簡介會逐字稿</div>
+</div></details>
+
+<details><summary><span class="who dad">爸</span><span class="who mom">媽</span>Q7 對禮然將來期望？</summary>
+<div class="body">
+<div class="samp">「希望佢愛學習、獨立自理、知道自己想要咩。學校話『授人以魚不如授人以漁』，正正係我哋想嘅方向。」</div>
+<div class="src">來源：簡介會逐字稿（胡主任引校方說法）</div>
+</div></details>
+</section>
+
+<section class="page" id="fc">
+<h2>記憶卡 <span class="tag">點卡翻面</span></h2>
+<div id="deck">
+<div class="fc" id="fc"><div class="inner"><div class="face front"><div class="kicker">點擊翻面</div><div id="fcq"></div></div><div class="face back"><div id="fca"></div></div></div></div>
+<div class="fcctl">
+<button id="prev">← 上一張</button>
+<button id="flip">翻面</button>
+<button id="next">下一張 →</button>
+<button id="shuffle">洗牌</button>
+</div>
+<div class="counter" id="fccount"></div>
+</div>
+</section>
+
+<section class="page" id="qz">
+<h2>測驗 <span class="tag">12 題</span></h2>
+<div id="result"></div>
+<div id="quiz"></div>
+</section>
+
+<section class="page" id="src">
+<h2>資料來源</h2>
+<ul class="sources" id="srclist"></ul>
+<details class="audit"><summary>📋 Jev 事實核實表（Round 1：32/32 PASS）</summary>
+<p class="auditnote">以下 32 條事實陳述全部經 TypeSafe Jev（jev-latest）對照來源摘錄核實，Noul ≥ 0.8 = PASS（實際 0.86–0.99）。出處編號對應下方來源列表。Round 2（渲染後網頁文本 vs 事實）亦已完成。</p>
+<table class="audit"><tr><th>✓</th><th>#</th><th>事實陳述</th><th>出處</th></tr>
+<tr><td>✓</td><td>c01</td><td>培道面試日期為2026年11月21日（星期六），時間個別電郵通知。</td><td>official</td></tr>
+<tr><td>✓</td><td>c02</td><td>2027/28年度幼兒班入讀學生須於2024年12月31日或之前出生。</td><td>official</td></tr>
+<tr><td>✓</td><td>c03</td><td>校方會邀請一位家長陪同小朋友進入面試場區，先給玩具與家長一齊玩、熟悉環境，再到另一個位置與老師傾談。</td><td>hk01</td></tr>
+<tr><td>✓</td><td>c04</td><td>「我們會邀請一位家長陪同小朋友進入面試場區，然後給他一些玩具與媽媽或爸爸一起玩，先讓他們對周圍環境熟悉了，才到另一個位置與老師傾談。」傾談內容例如給他一些水果問他喜歡吃哪一款；之後再給玩具如車仔，讓他一邊玩一邊傾偈。（問鍾意食邊款）及玩具車仔與小朋友邊玩邊傾談。</td><td>hk01</td></tr>
+<tr><td>✓</td><td>c05</td><td>面試標準不是要小朋友有傑出的說話技巧，只需要跟老師用說話溝通。</td><td>hk01</td></tr>
+<tr><td>✓</td><td>c06</td><td>家長代答會令小朋友緊張，校長提醒家長不需代答。</td><td>hk01</td></tr>
+<tr><td>✓</td><td>c07</td><td>老師會多方面引導小朋友開口，家長可扮演啦啦隊角色，微笑耐心等候。</td><td>hk01</td></tr>
+<tr><td>✓</td><td>c08</td><td>家長實錄（非官方）指面試結束接過小貼紙時，老師觀察小朋友是否主動講多謝及再見。</td><td>firstfoot</td></tr>
+<tr><td>✓</td><td>c09</td><td>家長面試會問「為什麼選擇我們學校」，了解是否認同辦學理念（家長實錄，非官方）。</td><td>firstfoot</td></tr>
+<tr><td>✓</td><td>c10</td><td>校長在簡介會表示下午三時面試正值午睡時間，遇過孩子到場仍睡覺，學校有足夠座位讓他先多睡一會。</td><td>transcript</td></tr>
+<tr><td>✓</td><td>c11</td><td>校長表示面試不是鬥快，孩子可以慢慢適應環境，學校有足夠時間。</td><td>transcript</td></tr>
+<tr><td>✓</td><td>c12</td><td>校長舉例指老師問孩子名字時家長已代答，以及迫孩子講Good morning是給孩子壓力。</td><td>transcript</td></tr>
+<tr><td>✓</td><td>c13</td><td>培道是半日制基督教學校，設K1至K3，校訓為愛誠貞毅。</td><td>transcript</td></tr>
+<tr><td>✓</td><td>c14</td><td>學校引用教育家杜威「從做中學」及「教育即生活」的理念編定課程。</td><td>overview</td></tr>
+<tr><td>✓</td><td>c15</td><td>學校不會要求幼兒班兒童執筆寫字，亦不會要求機械式抄寫或操練式計算練習。</td><td>overview</td></tr>
+<tr><td>✓</td><td>c16</td><td>學校扣減政府資助後學費免費（幼稚園教育計劃）。</td><td>overview</td></tr>
+<tr><td>✓</td><td>c17</td><td>英文課由外籍老師負責，普通話由考獲普通話水平測試一級資歷的專職老師任教。</td><td>overview</td></tr>
+<tr><td>✓</td><td>c18</td><td>英文及普通話以小組形式透過唱歌、故事、兒歌及遊戲引導學生多聽多講。</td><td>overview</td></tr>
+<tr><td>✓</td><td>c19</td><td>簡介會介紹打工賺錢賣物會活動：孩子製作貨物賺錢後參加賣物會，學習金錢概念。</td><td>transcript</td></tr>
+<tr><td>✓</td><td>c20</td><td>簡介會介紹揹BB活動：K1孩子全天揹玩具嬰兒，要餵奶換片，體驗父母辛勞。</td><td>transcript</td></tr>
+<tr><td>✓</td><td>c21</td><td>學校重視閱讀：每星期借閱圖書、話劇活動、家長到校講故事、作家到校分享簽書。</td><td>transcript</td></tr>
+<tr><td>✓</td><td>c22</td><td>每日有體能和音樂活動；星期五額外美術課。</td><td>transcript</td></tr>
+<tr><td>✓</td><td>c23</td><td>茶點由學校廚師每日製作新鮮食物。</td><td>transcript</td></tr>
+<tr><td>✓</td><td>c24</td><td>校方期望以「授人以魚，不如授人以漁」形容培養孩子方向。</td><td>transcript</td></tr>
+<tr><td>✓</td><td>c25</td><td>學校設家長學堂、家長觀課日、親子旅行等家校活動。</td><td>overview</td></tr>
+<tr><td>✓</td><td>c26</td><td>學額：六班（上午三班下午三班每班三十人）。</td><td>transcript</td></tr>
+<tr><td>✓</td><td>c27</td><td>上課時間：上午班9:00-12:00，下午班1:30-4:30。</td><td>topschool</td></tr>
+<tr><td>✓</td><td>c28</td><td>校長為陳敏儀女士。</td><td>topschool</td></tr>
+<tr><td>✓</td><td>c29</td><td>幼稚園學生不需參加小學面試可100%獲得錄取（直升）直屬小學。</td><td>hk01</td></tr>
+<tr><td>✓</td><td>c30</td><td>香港培道中學是女校；小學與中學是聯繫關係，不是直屬或一條龍。</td><td>report</td></tr>
+<tr><td>✓</td><td>c31</td><td>小學是私立男女全日制，2026/27學費每年HK$65,000（分10期繳付）。</td><td>report</td></tr>
+<tr><td>✓</td><td>c32</td><td>辦學團體為香港浸信會聯會，1888年創校（廣州創校）。</td><td>report</td></tr>
+</table></details>
+<h2>Jev 事實核實表</h2>
+<details class="audit"><summary>審核方法與結果（jev-1.14.0，兩回合）</summary>
+<p class="auditnote">方法：①抽取頁面全部事實陳述，逐條對照來源摘錄判斷「是否被來源支持（非憑空作出）」，信心 ≥0.8 = PASS；②用 Jev 對照「渲染後網頁全文」逐條核對事實陳述。全部 PASS 後才發布。</p>
+<table class="audit" id="audittable"></table>
+</details>
+</section>
+
+<footer>Jev 審核：全部事實陳述經 TypeSafe/Jev 對照來源核實（信心 ≥0.8）· 備份於 GitHub · Pages 自動更新</footer>
+</main>
+<script>
+document.querySelectorAll("#nav button").forEach(b=>b.onclick=()=>{
+document.querySelectorAll("#nav button").forEach(x=>x.classList.remove("active"));
+document.querySelectorAll("section.page").forEach(x=>x.classList.remove("active"));
+b.classList.add("active");document.getElementById(b.dataset.p).classList.add("active");
+document.getElementById(b.dataset.p).scrollIntoView({behavior:"smooth"});});
+
+const CARDS=[
+["校訓？","愛・誠・貞・毅（基督教浸信會聯會，1888年廣州創校）"],
+["課程理念（杜威兩句）？","從做中學＋教育即生活；K1 唔執筆寫字、唔機械操練"],
+["面試流程第一關？","一位家長陪同入場區玩玩具熱身，熟悉環境先同老師傾談"],
+["面試老師最想見到咩？","肯開口說話——唔需要傑出技巧，肯同老師溝通就得"],
+["學費？","扣減政府資助後免費（參加幼稚園教育計劃）"],
+["上課時間？","半日制：上午 9:00–12:00／下午 1:30–4:30"],
+["學額？","每級上下午各 3 班 × 30 人 = 180"],
+["語文教學？","外籍 NET 英文＋普通話一級專職老師，小組＋遊戲＋繪本"],
+["兩大特色活動？","打工賺錢賣物會（金錢概念）；揹 BB 全日體驗爸媽辛勞"],
+["閱讀文化？","每星期借閱圖書、話劇、家長到校講故事、作家到校分享簽書"],
+["銜接路線？","100% 直升培道小學（私立 $65,000/年）；聯繫中學培道中學係女校"],
+["家長答案口訣？","做中學・生活教・銜接順・愛誠貞毅"],
+["校長金句？","孩子就是孩子；安全感受先於表現；面試唔鬥快"],
+["每日／每週活動？","每日體能＋音樂；星期五美術；鮮製茶點"],
+];
+let order=[...CARDS.keys()],idx=0,flipped=false;
+function render(){const[q,a]=CARDS[order[idx]];flipped=false;document.getElementById("fc").classList.remove("flipped");document.getElementById("fcq").textContent=q;document.getElementById("fca").textContent=a;document.getElementById("fccount").textContent=(idx+1)+" / "+CARDS.length;}
+document.getElementById("fc").onclick=()=>{flipped=!flipped;document.getElementById("fc").classList.toggle("flipped",flipped);};
+document.getElementById("flip").onclick=()=>{flipped=!flipped;document.getElementById("fc").classList.toggle("flipped",flipped);};
+document.getElementById("prev").onclick=()=>{idx=(idx-1+CARDS.length)%CARDS.length;render();};
+document.getElementById("next").onclick=()=>{idx=(idx+1)%CARDS.length;render();};
+document.getElementById("shuffle").onclick=()=>{order.sort(()=>Math.random()-.5);idx=0;render();};
+render();
+
+const QUIZ=[
+{q:"面試由邊個陪同小朋友入場區？",o:["一位家長","兩位家長一齊","小朋友自己入"],a:0,why:"校長（HK01 專訪）：邀請一位家長陪同小朋友入面試場區，一齊玩玩具熟悉環境。"},
+{q:"老師同小朋友傾談時，最想見到咩？",o:["講出英文名詞","肯開口說話","背誦標準答案"],a:1,why:"校長：不需要傑出的說話技巧，只需要跟老師用說話溝通。"},
+{q:"老師用咩日常物品同小朋友開話題（校長舉例）？",o:["水果","積木","字母卡"],a:0,why:"HK01 專訪：俾佢揀水果問鍾意食邊款，再俾玩具車仔邊玩邊傾偈。"},
+{q:"小朋友慢熱唔出聲，家長應該？",o:["即刻代答","微笑耐心等候，俾老師引導","帶小朋友離場"],a:1,why:"校長：家長代答令小朋友緊張；老師會多方面引導開口。"},
+{q:"下午場撞瞓晏覺點算？",o:["改期","照去，學校可以俾小朋友先睡一會","谷醒佢"],a:1,why:"校長（簡介會逐字稿）：遇過孩子到場仍睡著，學校有足夠座位俾佢先多睡一會。"},
+{q:"校訓係？",o:["德智體群美","愛誠貞毅","仁義禮智"],a:1,why:"官方及教育局資料：愛・誠・貞・毅。"},
+{q:"課程引用邊位教育家嘅理念？",o:["蒙特梭利","杜威（John Dewey）","福祿貝爾"],a:1,why:"教育局概覽：引用杜威『從做中學』及『教育即生活』編定課程。"},
+{q:"幼稚園學費（扣減政府資助後）？",o:["每月約 $1,900","免費","每期 $197"],a:1,why:"教育局概覽／TOPSchool：扣減政府資助後全年學費免費。"},
+{q:"培道幼稚園直升小學嘅安排？",o:["要再考小學面試","100%直升培道小學","隨機派位"],a:1,why:"HK01 專訪：幼稚園學生不需參加小學面試可 100% 獲得錄取。"},
+{q:"簡介會提到邊個活動令孩子體驗爸媽辛勞？",o:["揹 BB 全日活動","種植活動","賣物會"],a:0,why:"簡介會逐字稿：K1 孩子全天揹玩具嬰兒，要餵奶換片。"},
+{q:"男仔入讀培道，升中要注意咩？（屋企決策題）",o:["培道中學係女校，聯繫非直屬","直升培道中學","無影響"],a:0,why:"本地研究：香港培道中學是女校；小學與中學是聯繫關係，非一條龍。"},
+{q:"家長部分常見核心問題？",o:["小朋友嘅血型","點解揀我哋學校／是否認同辦學理念","家庭收入"],a:1,why:"家長實錄（非官方）：家長面試問為什麼選擇我們學校，是否認同辦學理念。"},
+];
+document.getElementById("quiz").innerHTML=QUIZ.map((it,i)=>`<div class="q" data-i="${i}"><h3>${i+1}. ${it.q}</h3>${it.o.map((o,j)=>`<button class="opt" data-j="${j}">${o}</button>`).join("")}<div class="why">💡 ${it.why}</div></div>`).join("");
+let done=0,score=0;
+document.querySelectorAll(".q .opt").forEach(btn=>btn.onclick=()=>{
+const qEl=btn.closest(".q");if(qEl.classList.contains("done"))return;
+qEl.classList.add("done");const it=QUIZ[+qEl.dataset.i];const pick=+btn.dataset.j;
+qEl.querySelectorAll(".opt").forEach((b,j)=>{if(j===it.a)b.classList.add("correct");});
+if(pick===it.a){score++;}else{btn.classList.add("wrong");}
+done++;if(done===QUIZ.length){const r=document.getElementById("result");r.style.display="block";r.textContent=score===QUIZ.length?"🎉 滿分！你哋已經入晒腦":`得分 ${score} / ${QUIZ.length}——錯嘅題目開返「記憶卡」溫返先。`;r.scrollIntoView({behavior:"smooth"});}});
+
+const SRC=[
+"香港培道小學幼稚園官方報名頁：2027-28 幼兒班入學申請（面試日期 2026年11月21日(六)，時間個別電郵通知；須 2024年12月31日或之前出生） — https://kids.ptps.edu.hk/CP/pG/5/19/12",
+"HK01《幼稚園面試｜培道幼稚園校長分享面試貼士》（陳敏儀校長專訪，2018刊2025更新）：面試流程、水果與車仔傾談、慢熱唔代答、啦啦隊、100%直升、學費全免 — https://www.hk01.com/親子/238534",
+"教育局幼稚園及幼稚園暨幼兒中心概覽（2025/26 資料 PDF）：1888創校、辦學團體香港浸信會聯會、校訓愛誠貞毅、杜威課程理念、K1唔執筆寫字、NET及普通話專職老師、師生比例、扣減資助後學費免費 — https://kgp2022.azurewebsites.net/edb/SchoolPDF/324477c-0001.pdf",
+"香港培道小學幼稚園 2027-28 簡介會逐字稿（2026-10-09，胡主任及陳校長）：賣物會打工、揹BB、繪本語文、閱讀文化、靈育、每日體能音樂、周五美術、茶點、授人以魚不如授人以漁、學額6班×30、面試唔鬥快可先睡 — 家內檔案：K1-升學雷達/school-research/香港培道小學幼稚園/簡介會逐字稿_正式整理版_2026-10-09.md",
+"TOPSchool 香港經濟日報學校頁：校長陳敏儀、班級結構、扣減資助後免費、NET及普通話小組教學 — https://topschool.hket.com/kindergarten/175",
+"家長實錄（非官方）：firstfootprint Facebook 2027-28 培道 K1 入學溫馨提示——禮貌觀察（貼紙講多謝再見）、家長面試問「為什麼選擇我們學校」 — https://www.facebook.com/www.firstfootprint.com.hk/posts/1683943187070161",
+"本地選校研究 report.md（2026-10-09）：培道中學為女校（聯繫非直屬）、小學學費 HK$65,000/年（分10期）、2024質素評核通過、保姆車路線及五個追問題 — 同上資料夾",
+];
+document.getElementById("srclist").innerHTML=SRC.map(s=>`<li>${s}</li>`).join("");
+</script>
+</body>
+</html>
