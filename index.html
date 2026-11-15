@@ -187,7 +187,7 @@ footer{text-align:center;color:var(--muted);font-size:.75rem;padding:20px}
 <section class="page" id="fc">
 <h2>記憶卡 <span class="tag">點卡翻面</span></h2>
 <div id="deck">
-<div class="fc" id="fc"><div class="inner"><div class="face front"><div class="kicker">點擊翻面</div><div id="fcq"></div></div><div class="face back"><div id="fca"></div></div></div></div>
+<div class="fc" id="fcard"><div class="inner"><div class="face front"><div class="kicker">點擊翻面</div><div id="fcq"></div></div><div class="face back"><div id="fca"></div></div></div></div>
 <div class="fcctl">
 <button id="prev">← 上一張</button>
 <button id="flip">翻面</button>
@@ -276,9 +276,9 @@ const CARDS=[
 ["每日／每週活動？","每日體能＋音樂；星期五美術；鮮製茶點"],
 ];
 let order=[...CARDS.keys()],idx=0,flipped=false;
-function render(){const[q,a]=CARDS[order[idx]];flipped=false;document.getElementById("fc").classList.remove("flipped");document.getElementById("fcq").textContent=q;document.getElementById("fca").textContent=a;document.getElementById("fccount").textContent=(idx+1)+" / "+CARDS.length;}
-document.getElementById("fc").onclick=()=>{flipped=!flipped;document.getElementById("fc").classList.toggle("flipped",flipped);};
-document.getElementById("flip").onclick=()=>{flipped=!flipped;document.getElementById("fc").classList.toggle("flipped",flipped);};
+function render(){const[q,a]=CARDS[order[idx]];flipped=false;document.getElementById("fcard").classList.remove("flipped");document.getElementById("fcq").textContent=q;document.getElementById("fca").textContent=a;document.getElementById("fccount").textContent=(idx+1)+" / "+CARDS.length;}
+document.getElementById("fcard").onclick=()=>{flipped=!flipped;document.getElementById("fcard").classList.toggle("flipped",flipped);};
+document.getElementById("flip").onclick=()=>{flipped=!flipped;document.getElementById("fcard").classList.toggle("flipped",flipped);};
 document.getElementById("prev").onclick=()=>{idx=(idx-1+CARDS.length)%CARDS.length;render();};
 document.getElementById("next").onclick=()=>{idx=(idx+1)%CARDS.length;render();};
 document.getElementById("shuffle").onclick=()=>{order.sort(()=>Math.random()-.5);idx=0;render();};
